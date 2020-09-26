@@ -1,4 +1,8 @@
 {
+  "name": "wasmparse",
+  "version": "1.0.0",
+  "description": "WASM parser",
+  "main": "index.js",
   "scripts": {
     "build": "webpack",
     "serve": "webpack-dev-server"
