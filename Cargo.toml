@@ -1,0 +1,11 @@
+[package]
+authors = ["altug <altugsahin@gmail.com>"]
+edition = "2018"
+name = "rustwasmhello"
+version = "0.1.0"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = '0.2'
