@@ -1,6 +1,8 @@
-// Note that a dynamic `import` statement here is required due to
-// webpack/webpack#6615, but in theory `import { greet } from './pkg';`
-// will work here one day as well!
 const rust = import("./pkg");
 
-rust.then((fn) => fn.greet("World!")).catch(console.error);
+rust
+  .then((fn) => {
+    fn.run_alert("World!");
+    fn.create_stuff();
+  })
+  .catch(console.error);
