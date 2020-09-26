@@ -7,3 +7,4 @@ build:
 	cargo build --release  --target wasm32-unknown-unknown
 	wasm-bindgen target/wasm32-unknown-unknown/release/wasmparse.wasm --out-dir ./dist
 	yarn build
+	cp index.html ./dist/index.html
